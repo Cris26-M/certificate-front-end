@@ -4,6 +4,9 @@ import { InputWithFocus } from "./hooks/InputWithFocus";
 import RoomWithCanvas from "./hooks/RoomWithCanvas";
 import "./styles.css";
 import { CounterReducer } from "./hooks/counterReducer";
+import { MeasureElement } from "./hooks/MeasureElement";
+import { Statistics } from "./hooks/useMemo/Statistics";
+import { ParentComponent } from "./hooks/useCallback/ParentComponent";
 
 const getInitialCount = () => 28;
 
@@ -30,7 +33,10 @@ export default function App() {
       {/* <RoomWithCanvas /> */}
       {/* <Office /> */}
       {/* <InputWithFocus /> */}
-      <CounterReducer/>
+      {/* <CounterReducer/> */}
+      {/* <MeasureElement /> */}
+      {/* <Statistics/> */}
+      <ParentComponent/>
     </>
   );
 }
