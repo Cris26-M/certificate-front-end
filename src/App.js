@@ -3,6 +3,7 @@ import { Office } from "./hooks/context/Office";
 import { InputWithFocus } from "./hooks/InputWithFocus";
 import RoomWithCanvas from "./hooks/RoomWithCanvas";
 import "./styles.css";
+import { CounterReducer } from "./hooks/counterReducer";
 
 const getInitialCount = () => 28;
 
@@ -28,7 +29,8 @@ export default function App() {
       {/* <Counter /> */}
       {/* <RoomWithCanvas /> */}
       {/* <Office /> */}
-      <InputWithFocus />
+      {/* <InputWithFocus /> */}
+      <CounterReducer/>
     </>
   );
 }
