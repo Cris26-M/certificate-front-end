@@ -76,3 +76,27 @@ function sayHello(user){
 
 sayHello(user)
 
+/**
+ * @function filterEvenNumbers
+ * @param {number[]} numbers - array de numeros para filtrar
+ * @returns  {number[]} un nuevo array de pares
+ */
+
+function filterEvenNumbers(numbers){
+    return numbers.filter(number => number % 2 === 0)
+}
+
+/**
+ * @async
+ * @function fetchData
+ * @param {string} url la url del servidor 
+ * @returns {Promise<object>} datos obtenidos del servidor
+ * @throws {Error} si la respuesta no es correcta
+ */
+async function fetchData (url){
+    const response = await fetch(url)
+    if (response.ok){
+        return response.json()
+    }
+    throw new Error("Error")
+}
