@@ -51,9 +51,9 @@ export default function App() {
       {/* <ParentComponent/> */}
       {/* <ComponentBasic texto={'hola'} numero={2} data={true} arrayOfNumbers={[1,2,3,4,5]}/> */}
       {/* <ComponentAdvance list={list} title={'hola'}/> */}
-      <ComponentWithChildren>
+      {/* <ComponentWithChildren>
        <p>Children</p>
-      </ComponentWithChildren>
+      </ComponentWithChildren> */}
     </>
   );
 }
